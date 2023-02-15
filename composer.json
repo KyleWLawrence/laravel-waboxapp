@@ -1,0 +1,40 @@
+{
+    "name": "kylewlawrence/waboxapp-laravel",
+    "type": "library",
+    "description": "Laravel API for WaboxApp",
+    "minimum-stability": "stable",
+    "keywords": [
+        "waboxapp",
+        "laravel",
+        "rest-api"
+    ],
+    "homepage": "https://designanddevelop.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KyleWLawrence",
+            "email": "Kyle@DesignAndDevelop.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "illuminate/support": "^8.0|^9.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "guzzlehttp/psr7": "^2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KyleWLawrence\\WaboxApp\\Providers\\WaboxAppServiceProvider"
+            ],
+            "aliases": {
+                "WaboxApp": "KyleWLawrence\\WaboxApp\\Facades\\WaboxApp"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "KyleWLawrence\\WaboxApp\\": "src"
+        }
+    }
+}
