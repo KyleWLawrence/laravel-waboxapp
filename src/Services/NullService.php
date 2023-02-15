@@ -3,7 +3,6 @@
 namespace KyleWLawrence\WaboxApp\Services;
 
 use Illuminate\Support\Facades\Log;
-use Log;
 
 class NullService
 {

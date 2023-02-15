@@ -1,6 +1,6 @@
 <?php
 
-namespace KyleWLawrence\WaboxApp\API;
+namespace KyleWLawrence\WaboxApp\Http;
 
 /**
  * Debug helper class
@@ -11,18 +11,22 @@ class Debug
      * @var mixed
      */
     public $lastRequestBody;
+
     /**
      * @var mixed
      */
     public $lastRequestHeaders;
+
     /**
      * @var mixed
      */
     public $lastResponseCode;
+
     /**
      * @var string
      */
     public $lastResponseHeaders;
+
     /**
      * @var mixed
      */
@@ -37,11 +41,11 @@ class Debug
         if (! is_string($lastError)) {
             $lastError = json_encode($lastError);
         }
-        $output = 'LastResponseCode: ' . $this->lastResponseCode
-                  . ', LastResponseError: ' . $lastError
-                  . ', LastResponseHeaders: ' . $this->lastResponseHeaders
-                  . ', LastRequestHeaders: ' . $this->lastRequestHeaders
-                  . ', LastRequestBody: ' . $this->lastRequestBody;
+        $output = 'LastResponseCode: '.$this->lastResponseCode
+                  .', LastResponseError: '.$lastError
+                  .', LastResponseHeaders: '.$this->lastResponseHeaders
+                  .', LastRequestHeaders: '.$this->lastRequestHeaders
+                  .', LastRequestBody: '.$this->lastRequestBody;
 
         return $output;
     }
