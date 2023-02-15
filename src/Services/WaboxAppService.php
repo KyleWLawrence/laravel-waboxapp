@@ -29,7 +29,7 @@ class WaboxAppService
         $this->uid = config('waboxapp-laravel.uid');
         $this->url = config('waboxapp-laravel.url');
 
-        if (! $this->bearer || ! $this->uid) {
+        if (! $this->token || ! $this->uid) {
             throw new InvalidArgumentException('Please set WABOXAPP_TOKEN && WABOXAPP_UID environment variables.');
         }
 
