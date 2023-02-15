@@ -89,6 +89,16 @@ class HttpClient
          return $this;
      }
 
+    public function getToken(): string
+    {
+        return $this->token;
+    }
+
+     public function getUid(): string|int
+     {
+         return $this->uid;
+     }
+
     /**
      * @return array
      */

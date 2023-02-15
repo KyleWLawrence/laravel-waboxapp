@@ -42,7 +42,10 @@ class Http
             [
                 'method' => 'GET',
                 'contentType' => 'application/json',
-                'postFields' => null,
+                'postFields' => [
+                    'token' => $client->getToken(),
+                    'uid' => $client->getUid(),
+                ],
                 'queryParams' => null,
             ],
             $options
