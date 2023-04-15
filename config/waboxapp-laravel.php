@@ -13,7 +13,7 @@ return [
 
     'driver' => env('WABOXAPP_DRIVER', 'api'),
     'token' => env('WABOXAPP_TOKEN', ''),
-    'url' => env('WABOXAPP_URL ', 'https://www.waboxapp.com/api'),
+    'url' => env('WABOXAPP_URL', 'www.waboxapp.com/api'),
     'uid' => env('WABOXAPP_UID', ''),
 
 ];

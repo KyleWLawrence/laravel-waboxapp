@@ -38,14 +38,20 @@ class Http
         $endPoint,
         $options = []
     ) {
+        if ( ! isset($options['postFields'] ) ) {
+            $options['postFields'] = [];
+        }
+
+        $options['postFields'] = array_merge([
+            'token' => $client->getToken(),
+            'uid' => $client->getUid(),
+        ], $options['postFields']);
+
         $options = array_merge(
             [
                 'method' => 'GET',
                 'contentType' => 'application/json',
-                'postFields' => [
-                    'token' => $client->getToken(),
-                    'uid' => $client->getUid(),
-                ],
+                'postFields' => [],
                 'queryParams' => null,
             ],
             $options
