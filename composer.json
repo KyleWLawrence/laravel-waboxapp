@@ -2,7 +2,7 @@
     "name": "kylewlawrence/waboxapp-laravel",
     "type": "library",
     "description": "Laravel API for WaboxApp",
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "keywords": [
         "waboxapp",
         "laravel",
