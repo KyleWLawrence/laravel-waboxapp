@@ -16,7 +16,5 @@ return [
     'url' => env('WABOXAPP_URL', 'www.waboxapp.com/api'),
     'uid' => env('WABOXAPP_UID', ''),
     'forwarding_uid' => env('WABOXAPP_FORWARDING', ''),
-    'uid' => env('WABOXAPP_UID', ''),
-    'forwarding_uid' => env('WABOXAPP_FORWARDING_UID', ''),
 
 ];
